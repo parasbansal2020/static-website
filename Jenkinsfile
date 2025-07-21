@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    environment {
-        GH_TOKEN = credentials('github-token') // Personal Access Token
-    }
     stages {
         stage('Checkout') {
             steps {
